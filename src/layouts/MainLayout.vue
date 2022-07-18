@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lhr LpR lfr">
     <!-- <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -40,16 +40,18 @@
       </q-list>
     </q-drawer> -->
     <Header />
-    <!-- <q-page-container>
-      <router-view />
-    </q-page-container> -->
-    <Footer />
+    
+    <q-page-container>
+      <Development />
+    </q-page-container>
+    <!-- <Footer /> -->
   </q-layout>
 </template>
 
 <script>
 import Header from '../pages/Header.vue'
-import Footer from '../pages/Footer.vue'
+// import Footer from '../pages/Footer.vue'
+import Development from '../pages/Development.vue'
 // import EssentialLink from 'components/EssentialLink.vue'
 
 // const linksData = [
@@ -99,7 +101,7 @@ import Footer from '../pages/Footer.vue'
 
 export default {
   name: 'MainLayout',
-  components: { Header, Footer },
+  components: { Header, Development },
   data () {
     return {
       // leftDrawerOpen: false,
