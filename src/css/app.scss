@@ -1,0 +1,50 @@
+// app global css in SCSS form
+@import "./reset.css";
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratBlack";
+  src: url('../fonts/Montserrat-Black.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'MontserratRegular';
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.q-focus-helper {
+  visibility: hidden;
+
+}
+
+.q-btn--rectangle {
+  border-radius: 5px;
+  border: 2px solid $positive;
+  &:hover {
+    border: 2px solid $white;
+    background-color: $positive;
+  }
+  &:active {
+    background-color: $white !important;
+    color: $primary;
+  }
+}
