@@ -1,11 +1,11 @@
 <template>
   <q-header 
-    class="bg-primary"
+    class="wrapper bg-primary"
   >
     <div class="q-pa-md flex justify-around items-center">
       <img src="../assets/logo.png" alt="logo">
       <nav
-        class=""
+        class="wrapper__navigation"
       >
         <a href="/" class="q-mx-md text-white text-bold">Услуги</a>
         <a href="/" class="q-mx-md text-white text-bold">Портфолио</a>
@@ -14,7 +14,7 @@
         <q-btn 
           label="Заказать"
           flat
-          class="order q-px-lg q-mx-md bg-positive text-bold cursor-pointer no-hover"
+          class="wrapper__order q-px-lg q-mx-md bg-positive text-bold cursor-pointer no-hover"
           size="15px"
         />
       </nav>
@@ -29,3 +29,21 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+  .wrapper {
+    
+      &__order {
+        border-radius: 5px;
+        border: 2px solid $positive;
+        &:hover {
+          border: 2px solid $white;
+        }
+        &:active {
+          background-color: $white !important;
+          color: $primary !important;
+          border: 2px solid $primary;
+        }
+      }
+    
+  }
+</style>

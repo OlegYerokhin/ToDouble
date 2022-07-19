@@ -43,15 +43,17 @@
     
     <q-page-container>
       <Development />
+      <Services />
     </q-page-container>
-    <!-- <Footer /> -->
+    <Footer />
   </q-layout>
 </template>
 
 <script>
 import Header from '../pages/Header.vue'
-// import Footer from '../pages/Footer.vue'
+import Footer from '../pages/Footer.vue'
 import Development from '../pages/Development.vue'
+import Services from '../pages/Services.vue'
 // import EssentialLink from 'components/EssentialLink.vue'
 
 // const linksData = [
@@ -101,7 +103,7 @@ import Development from '../pages/Development.vue'
 
 export default {
   name: 'MainLayout',
-  components: { Header, Development },
+  components: { Header, Development, Services, Footer},
   data () {
     return {
       // leftDrawerOpen: false,

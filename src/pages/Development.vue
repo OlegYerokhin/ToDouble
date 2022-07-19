@@ -1,5 +1,5 @@
 <template>
-  <q-page class="">
+  <q-page>
     <div class="wrapper column">
       <div class="wrapper__content">
         <h1>Разработка интернет-магазина с нуля за неделю</h1>
@@ -34,11 +34,13 @@
       padding-bottom: 55px;
     }
     &__order-btn {
+      border-radius: 5px;
       border: 2px solid $positive;
       &:hover {
         border: 2px solid $white;
       }
       &:active {
+        background-color: $white !important;
         color: $primary !important;
         border: 2px solid $primary;
       }
