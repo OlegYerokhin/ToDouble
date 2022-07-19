@@ -1,5 +1,6 @@
 // app global css in SCSS form
 @import "./reset.css";
+@import "./fontsize.scss";
 
 @font-face {
   font-family: "MontserratRegular";
@@ -25,6 +26,7 @@
 body {
   font-family: 'MontserratRegular';
   margin: 0 auto;
+  // background-size: cover;
 }
 
 a {
@@ -36,22 +38,32 @@ a {
 
 }
 
-.q-btn--rectangle {
-  border-radius: 5px;
-  border: 2px solid $positive;
-  &:hover {
-    border: 2px solid $white;
-    background-color: $positive;
-  }
-  &:active {
-    background-color: $white !important;
-    color: $primary;
+.q-header {
+  &__q-btn--rectangle {
+    border-radius: 5px;
+    border: 2px solid $positive;
+    &:hover {
+      border: 2px solid $white;
+      background-color: $positive;
+    }
+    &:active {
+      background-color: $white !important;
+      color: $primary;
+    }
   }
 }
+
 
 h1 {
   font-family: 'MontserratBlack';
   font-size: 50px;
   line-height: 62px;
   padding-bottom: 20px;
+}
+
+h3 {
+  font-family: 'MontserratBlack';
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 80px;
 }
